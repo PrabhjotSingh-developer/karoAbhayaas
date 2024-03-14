@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MyContext from "./MyContext.jsx";
+
 const MyProvider = ({ children }) => {
   const orders = [
     {
@@ -82,8 +83,8 @@ const MyProvider = ({ children }) => {
   ]
   // we take simple array of object bcz we have constant values if we have to get value from database then we use the array of object but we can use 
   // useState
-  const [value, setValue] = useState(1);
+  const [showCheckout,setShowCheckout] = useState(false);
 
-  return <MyContext.Provider value={{ orders,sampleVideoTitles,products,abouts }}>{children}</MyContext.Provider>;
+  return <MyContext.Provider value={{ orders,sampleVideoTitles,products,abouts ,showCheckout,setShowCheckout}}>{children}</MyContext.Provider>;
 };
 export default MyProvider;

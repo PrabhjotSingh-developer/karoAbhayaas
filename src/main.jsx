@@ -12,6 +12,7 @@ import Question from './components/qandans/Question.jsx'
 import Classes from './Pages/classes/Classes.jsx';
 import Products from './Pages/products/Products.jsx';
 import About from './Pages/about/About.jsx';
+import Cart from './Pages/cart/Cart.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,7 +27,7 @@ const router = createBrowserRouter(
          <Route path="products" element={<Products/>}/>    
          <Route path="Aboutus" element={<About/>}/>    
          <Route path="Profile"/>    
-         <Route path="Cart"/>    
+         <Route path="Cart" element={<Cart/>}/>    
     </Route>
   )
 )

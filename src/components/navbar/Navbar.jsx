@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li className='flex gap-3 justify-center items-center'>
                 <Link to={""}><MdPerson /></Link>
-                 <Link to={""}><FaShoppingCart/></Link>
+                 <Link to={"cart"}><FaShoppingCart/></Link>
             </li>
             
           </ul>
