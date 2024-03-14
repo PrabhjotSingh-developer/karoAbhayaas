@@ -8,13 +8,14 @@ import MyProvider from './context/MyProvider.jsx'
 import Address from './components/AddressName/Address.jsx';
 import Orders from './components/orders/Orders.jsx';
 import Test from './components/test/Test.jsx';
+import Question from './components/qandans/Question.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/"  element={<Layout/>}>
          <Route path="/" element={<><Address/></>}>
                   <Route index element={<Orders/>}/>
                   <Route path="/test" element={<Test/>}/>
-                  <Route path="ques"/>
+                  <Route path="ques" element={<Question/>}/>
 
            </Route>    
          <Route path="Classes" />    
