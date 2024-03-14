@@ -21,7 +21,7 @@ const Navbar = () => {
                  <NavLink to={""} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} >Join Us</NavLink>
             </li>
             <li>
-                 <NavLink to={"/classes" } className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`}>Classes</NavLink>
+                 <NavLink to={"classes" } className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`}>Classes</NavLink>
             </li>
             <li>
                  <NavLink to={"/products"} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`}>Products</NavLink>

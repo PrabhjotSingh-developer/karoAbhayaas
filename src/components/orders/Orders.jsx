@@ -6,9 +6,9 @@ const Orders = () => {
   const { orders } = context;
   return (
     <div className="flex flex-col gap-5 mt-5">
-      {orders.map((item, key) => {
+      {orders.map((item, index) => {
         return (
-          <div className="flex md:justify-between border-2 p-9 flex-col md:flex-row gap-4"> 
+          <div className="flex md:justify-between border-2 p-9 flex-col md:flex-row gap-4" key={index + "orderno"}> 
             <div className="order_content flex :gap-2  flex-col w-[100%] md:w-[50%]">
               <h2 className="text-2xl md:text-3xl font-bold">ORDER #{item.orderNo}</h2>
               <h3 className="md:text-xl">
