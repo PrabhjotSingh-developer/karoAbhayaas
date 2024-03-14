@@ -11,12 +11,12 @@ const Navbar = () => {
       };
   return (
     <nav className={`flex md:py-2 py-4 items-start w-[100%] md:h-[auto]  border-b-4 `}>
-        <div className="main_Links flex justify-between w-[100%] relative md:px-5 md:py-4 px-3  ">
+        <div className="main_Links flex justify-between w-[100%] relative  md:px-5 md:py-4 px-3  ">
               <div className="logo">
             <Link to={""}>  <h3>Karo Abhayaas</h3></Link>
           </div>
           
-          <ul style={customStyle}  className={`md:flex gap-5 md:flex-row flex-col md:static py-10 mt-5 md:h-[auto] md:mt-0 md:bg-white md:py-0 ${showMenuBar?"fixed flex right-[0%] h-[100%] bg-gray-300  transition-duration w-[100%] justify-start items-center  top-10 ":"h-[100%] flex fixed right-[-30%] top-10  bg-gray-300 justify-start items-center"} md:justify-end`} >
+          <ul style={customStyle}  className={`md:flex gap-5 md:flex-row flex-col md:static py-10 mt-5 md:h-[auto] md:mt-0 md:bg-white md:py-0 ${showMenuBar?"fixed flex right-[0%] h-[100%] bg-gray-300 z-10 transition-duration w-[100%] justify-start items-center  top-10 ":"h-[100%] flex fixed right-[-30%] top-10  bg-gray-300 justify-start items-center"} md:justify-end`} >
             <li>
                  <NavLink to={""} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} >Join Us</NavLink>
             </li>

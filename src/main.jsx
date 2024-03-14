@@ -7,12 +7,13 @@ import Layout from './components/Layout/Layout.jsx';
 import MyProvider from './context/MyProvider.jsx'
 import Address from './components/AddressName/Address.jsx';
 import Orders from './components/orders/Orders.jsx';
+import Test from './components/test/Test.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/"  element={<Layout/>}>
-         <Route path="" element={<><Address/><Orders/></>}>
-                  <Route path=""/>
-                  <Route path="test"/>
+         <Route path="/" element={<><Address/></>}>
+                  <Route index element={<Orders/>}/>
+                  <Route path="/test" element={<Test/>}/>
                   <Route path="ques"/>
 
            </Route>    
