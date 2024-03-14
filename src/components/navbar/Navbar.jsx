@@ -18,16 +18,16 @@ const Navbar = () => {
           
           <ul style={customStyle}  className={`md:flex gap-5 md:flex-row flex-col md:static py-10 mt-5 md:h-[auto] md:mt-0 md:bg-white md:py-0 ${showMenuBar?"fixed flex right-[0%] h-[100%] bg-gray-300 z-10 transition-duration w-[100%] justify-start items-center  top-10 ":"h-[100%] flex fixed right-[-30%] top-10  bg-gray-300 justify-start items-center"} md:justify-end`} >
             <li>
-                 <NavLink to={""} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} >Join Us</NavLink>
+                 <NavLink to={""} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} onClick={()=>setshowMenu(false)} >Join Us</NavLink>
             </li>
             <li>
-                 <NavLink to={"classes" } className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`}>Classes</NavLink>
+                 <NavLink to={"classes" } className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} onClick={()=>setshowMenu(false)}>Classes</NavLink>
             </li>
             <li>
-                 <NavLink to={"/products"} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`}>Products</NavLink>
+                 <NavLink to={"products"} className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} onClick={()=>setshowMenu(false)}>Products</NavLink>
             </li>
             <li>
-                 <NavLink to={"aboutus"}  className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`}>About Us</NavLink>
+                 <NavLink to={"aboutus"}  className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} onClick={()=>setshowMenu(false)}>About Us</NavLink>
             </li>
             <li className='flex gap-3 justify-center items-center'>
                 <Link to={""}><MdPerson /></Link>

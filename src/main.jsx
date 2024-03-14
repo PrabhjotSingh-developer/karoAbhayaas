@@ -10,6 +10,8 @@ import Orders from './components/orders/Orders.jsx';
 import Test from './components/test/Test.jsx';
 import Question from './components/qandans/Question.jsx'
 import Classes from './Pages/classes/Classes.jsx';
+import Products from './Pages/products/Products.jsx';
+import About from './Pages/about/About.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,8 +23,8 @@ const router = createBrowserRouter(
 
            </Route>    
          <Route path="Classes" element={<Classes/>}/>    
-         <Route path="Products"/>    
-         <Route path="Aboutus"/>    
+         <Route path="products" element={<Products/>}/>    
+         <Route path="Aboutus" element={<About/>}/>    
          <Route path="Profile"/>    
          <Route path="Cart"/>    
     </Route>

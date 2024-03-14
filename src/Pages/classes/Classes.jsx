@@ -20,7 +20,6 @@ const Classes = () => {
                <Link className='font-bold'>3</Link>
                <Link className='font-bold'>4</Link>
                <Link className='font-bold'>5</Link>
-
           </div>
     </div>
   )
