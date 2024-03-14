@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar.jsx';
+import Layout from './components/Layout/Layout.jsx';
+import MyProvider from './context/MyProvider.jsx'
+import Address from './components/AddressName/Address.jsx';
+import Orders from './components/orders/Orders.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/"  element={<Navbar/>}>
-         <Route path=""/>    
+    <Route path="/"  element={<Layout/>}>
+         <Route path="" element={<><Address/><Orders/></>}>
+                  <Route path=""/>
+                  <Route path="test"/>
+                  <Route path="ques"/>
+
+           </Route>    
          <Route path="Classes" />    
          <Route path="Products"/>    
          <Route path="Aboutus"/>    
@@ -18,6 +26,9 @@ const router = createBrowserRouter(
 )
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <MyProvider>
       <RouterProvider router={router}/>
+
+    </MyProvider>
   </React.StrictMode>,
 )
