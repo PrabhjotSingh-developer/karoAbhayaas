@@ -17,4 +17,4 @@
       npm run dev
    5. Open your browser and visit http://localhost:3000.
   
-3. Live Link :- https://65f3cf1a0688d40b8efcaa82--symphonious-biscuit-caf61b.netlify.app/cart
+3. Live Link :- https://65f3cf1a0688d40b8efcaa82--symphonious-biscuit-caf61b.netlify.app
