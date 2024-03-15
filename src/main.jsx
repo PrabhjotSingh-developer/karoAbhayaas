@@ -1,19 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom';
-import Layout from './components/Layout/Layout.jsx';
-import MyProvider from './context/MyProvider.jsx'
-import Address from './components/AddressName/Address.jsx';
-import Orders from './components/orders/Orders.jsx';
-import Test from './components/test/Test.jsx';
-import Question from './components/qandans/Question.jsx'
-import Classes from './Pages/classes/Classes.jsx';
-import Products from './Pages/products/Products.jsx';
-import About from './Pages/about/About.jsx';
-import Cart from './Pages/cart/Cart.jsx';
-
+import {Layout,MyProvider,Address,Orders,Test,Question,Classes,Products,About,Cart,Login,Signup} from './index'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/"  element={<Layout/>}>
@@ -26,8 +15,10 @@ const router = createBrowserRouter(
          <Route path="Classes" element={<Classes/>}/>    
          <Route path="products" element={<Products/>}/>    
          <Route path="Aboutus" element={<About/>}/>    
-         <Route path="Profile"/>    
-         <Route path="Cart" element={<Cart/>}/>    
+         <Route path="Profile" element = {<Login/>}/>    
+         <Route path="Cart" element={<Cart/>}/>   
+         <Route path="signup" element = {<Signup/>}/>    
+
     </Route>
   )
 )

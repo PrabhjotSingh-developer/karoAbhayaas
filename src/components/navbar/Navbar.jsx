@@ -30,7 +30,7 @@ const Navbar = () => {
                  <NavLink to={"aboutus"}  className={({isActive})=>`${isActive?"text-black":"text-black opacity-75"}`} onClick={()=>setshowMenu(false)}>About Us</NavLink>
             </li>
             <li className='flex gap-3 justify-center items-center'>
-                <Link to={""}  onClick={()=>setshowMenu(false)}><MdPerson /></Link>
+                <Link to={"profile"}  onClick={()=>setshowMenu(false)}><MdPerson /></Link>
                  <Link to={"cart"} onClick={()=>setshowMenu(false)}><FaShoppingCart/></Link>
             </li>
             
