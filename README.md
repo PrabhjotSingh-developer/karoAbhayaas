@@ -7,12 +7,14 @@
 2. Installation
    To run the project locally, follow these steps:
 
-   Clone the repository:
+   1. Clone the repository:
       git clone https://github.com/anchalraj31082004/karo-abhayas.git
-   Navigate to the project directory:
+   2. Navigate to the project directory:
       cd karo-abhayas
-   Install dependencies:
+   3. Install dependencies:
       npm install
-   Run the development server:
-    npm run dev
-  Open your browser and visit http://localhost:3000.
+   4. Run the development server:
+      npm run dev
+   5. Open your browser and visit http://localhost:3000.
+  
+3. Live Link :- https://65f3cf1a0688d40b8efcaa82--symphonious-biscuit-caf61b.netlify.app/cart
