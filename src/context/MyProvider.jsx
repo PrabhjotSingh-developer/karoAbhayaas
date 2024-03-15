@@ -84,7 +84,7 @@ const MyProvider = ({ children }) => {
   // we take simple array of object bcz we have constant values if we have to get value from database then we use the array of object but we can use 
   // useState
   const [showCheckout,setShowCheckout] = useState(false);
-
-  return <MyContext.Provider value={{ orders,sampleVideoTitles,products,abouts ,showCheckout,setShowCheckout}}>{children}</MyContext.Provider>;
+  const [showDelete,setShowDelete] = useState(false);
+  return <MyContext.Provider value={{ orders,sampleVideoTitles,products,abouts ,showCheckout,setShowCheckout,showDelete,setShowDelete}}>{children}</MyContext.Provider>;
 };
 export default MyProvider;
