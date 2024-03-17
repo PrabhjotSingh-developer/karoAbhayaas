@@ -8,9 +8,9 @@
    To run the project locally, follow these steps:
 
    1. Clone the repository:
-      git clone https://github.com/anchalraj31082004/karo-abhayas.git
+      git clone https://github.com/PrabhjotSingh-developer/karoAbhayaas.git
    2. Navigate to the project directory:
-      cd karo-abhayas
+      cd karoAbhayaas
    3. Install dependencies:
       npm install
    4. Run the development server:
